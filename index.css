@@ -9,10 +9,60 @@
 }
 
 body {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: black;
 
     color: white;
     font-size: 1.6rem;
     font-family: sans-serif;
     text-align: center;
+}
+
+.container {
+    width: min(40rem, 80%);
+}
+
+.container h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    margin-bottom: 4rem;
+
+    opacity: 0.7;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form .form__input, .form__button {
+    width: 100%;
+    padding: 2rem;
+
+    font-size: 2rem;
+
+    border-radius: .4rem;
+    border: none;
+}
+
+.form .form__button {
+    color: white;
+
+    background-color: blueviolet;
+
+    cursor: pointer;
+    transition: filter .2s;
+}
+
+.form .form__button:hover {
+    filter: brightness(1.2);
 }
