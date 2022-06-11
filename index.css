@@ -69,11 +69,12 @@ body {
 
 #response {
     margin-top: 3rem;
+
+    transition: opacity 2s;
 }
 
 .question {
     font-size: 1.5rem;
     font-weight: normal;
-    opacity: 0.9;
     margin-bottom: 1rem;
 }
