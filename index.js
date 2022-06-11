@@ -30,7 +30,11 @@ function revealFate() {
 
     const newResponsePosition = Math.floor(Math.random() * responses.length)
 
-    response.textContent = responses[newResponsePosition]
-}
+    const question = `
+        <div class="question">
+            ${questionInput.value}   
+        </div>
+    `
 
-console.log(response)
+    response.innerHTML = question + responses[newResponsePosition]
+}
