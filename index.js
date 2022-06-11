@@ -1,3 +1,9 @@
+const btn = document.querySelector('#submit')
+
+btn.addEventListener('click', function(e) {
+    e.preventDefault()
+})
+
 const responses = [
     "Certeza!",
     "Não tenho tanta certeza.",
@@ -20,10 +26,10 @@ const responses = [
     "Sinais apontam que sim.",
 ]
 
-function revealFate() {
-    const response = document.querySelector('#response')
-    const questionInput = document.querySelector('#questionInput')
+const response = document.querySelector('#response')
+const questionInput = document.querySelector('#questionInput')
 
+function revealFate() {
     if (questionInput.value === '') {
         return alert('[ERRO] Preencha o campo de perguntas e tente novamente!')
     }
@@ -37,4 +43,10 @@ function revealFate() {
     `
 
     response.innerHTML = question + responses[newResponsePosition]
+
+    setTimeout(function() {
+        response.innerHTML = ''
+    }, 4000)
 }
+
+
