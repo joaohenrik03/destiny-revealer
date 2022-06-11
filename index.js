@@ -34,6 +34,8 @@ function revealFate() {
         return alert('[ERRO] Preencha o campo de perguntas e tente novamente!')
     }
 
+    btn.setAttribute('disabled', true)
+
     const newResponsePosition = Math.floor(Math.random() * responses.length)
 
     const question = `
@@ -45,8 +47,8 @@ function revealFate() {
     response.innerHTML = question + responses[newResponsePosition]
 
     setTimeout(function() {
-        response.innerHTML = ''
+        btn.removeAttribute('disabled')
+        questionInput.value = ''
+        response.style.opacity = 0
     }, 4000)
 }
-
-
