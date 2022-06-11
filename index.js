@@ -34,6 +34,7 @@ function revealFate() {
         return alert('[ERRO] Preencha o campo de perguntas e tente novamente!')
     }
 
+    response.style.opacity = 0.9
     btn.setAttribute('disabled', true)
 
     const newResponsePosition = Math.floor(Math.random() * responses.length)
