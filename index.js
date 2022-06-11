@@ -1,5 +1,3 @@
-const response = document.querySelector('#response')
-
 const responses = [
     "Certeza!",
     "Não tenho tanta certeza.",
@@ -23,6 +21,13 @@ const responses = [
 ]
 
 function revealFate() {
+    const response = document.querySelector('#response')
+    const questionInput = document.querySelector('#questionInput')
+
+    if (questionInput.value === '') {
+        return alert('[ERRO] Preencha o campo de perguntas e tente novamente!')
+    }
+
     const newResponsePosition = Math.floor(Math.random() * responses.length)
 
     response.textContent = responses[newResponsePosition]
