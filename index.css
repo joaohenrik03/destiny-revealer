@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: black;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,0,154,1) 50%, rgba(0,0,0,1) 100%);
 
     color: white;
     font-size: 1.6rem;
