@@ -1,0 +1,81 @@
+body {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(80,0,154,1) 50%, rgba(0,0,0,1) 100%);
+
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container {
+  width: min(40rem, 80%);
+}
+
+.container h1 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.container p {
+  margin-bottom: 4rem;
+
+  opacity: 0.7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form .form__input, .form__button {
+  width: 100%;
+  padding: 2rem;
+
+  font-size: 2rem;
+
+  border-radius: .4rem;
+  border: none;
+}
+
+.form .form__button {
+  color: white;
+
+  background-color: blueviolet;
+
+  cursor: pointer;
+  transition: filter .2s;
+}
+
+.form .form__button:hover {
+  filter: brightness(1.2);
+}
+
+.response {
+  margin-top: 3rem;
+
+  transition: opacity 2s;
+}
+
+.question {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
