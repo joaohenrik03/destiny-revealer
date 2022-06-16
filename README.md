@@ -20,6 +20,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 
+Bibliotecas
+
+- [React JS](https://pt-br.reactjs.org/)
+
+## ▶️ Como executar
+
+- Clone o repositório
+- Rode `npm install` para baixar as dependências
+- Rode o `npm run start` para iniciar a aplicação
+
 ## 💻 Projeto
 
 O revelador de destinos é um site de página única, onde você pode perguntar o que quiser para a bola de cristal e ela irá lhe dar uma resposta, mas cuidado, a resposta pode não ser muito agradável...
